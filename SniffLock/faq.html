@@ -1,0 +1,107 @@
+<html>
+
+<head>
+	<title>SniffLock FAQ</title>
+	<link href="styles.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
+</head>
+
+<body onload="showdate()">
+	<div>
+		<h2 class="dateheader">
+			<form id="randdate">
+				<input>
+			</form>
+
+		</h2>
+		<h1 id = "header" style="text-align: center" ;>
+			SniffLock
+			<img style="display: block; margin: auto" id="picture1" onclick="imgklik();"
+				src="https://i.imgur.com/tLUBuhk.png" height="200" width="200">
+
+			<h3 style="text-align: center;">
+				Safety first.
+			</h3>
+			<hr>
+		</h1>
+		<h2 style="text-align: center"> Frequently Asked Questions</h2>
+
+		<hr>
+			<h3>
+				Will this brick my phone?
+			</h3>
+
+		<h4>
+			DEV ANSWER: SniffLock™ has been tried and tested on many different mobile devices without any problems.
+		<h4>
+
+		<hr>
+
+			<h3>
+				How do I know you won't hack my phone?
+			</h3>
+
+		<h4>
+			DEV ANSWER: We really don't feel the need to do so.
+		<h4>
+
+		<hr>
+
+			<h3>
+				What's with the weird name?
+			</h3>
+
+		<h4>
+			DEV ANSWER: SniffLock™ is a perfectly reasonable name.
+		</h4>
+
+		<hr>
+			
+			<h3>
+				Will SniffLock™ help with my anxiety?
+			</h3>
+
+		<h4>
+			DEV ANSWER: No.
+		<h4>
+
+		<hr>
+
+		<a id="button" href="index.html" style="font-size: 30px" ;> Back </a>
+
+	</div>
+	<script>
+		function imgklik() {
+			if (document.getElementById("picture1").src == "https://i.imgur.com/tLUBuhk.png") {
+				document.getElementById("picture1").src = "https://i.imgur.com/RM1X0ie.png";
+			} else {
+				document.getElementById("picture1").src = "https://i.imgur.com/tLUBuhk.png";
+			}
+		}
+
+		var day = randomBetween(1, 31);
+		var month = randomBetween(1, 12);
+		var year = randomBetween(2010, 2019);
+
+		if (day <= 9) {
+			day = "0" + day;
+		}
+		if (month <= 9) {
+			month = "0" + month;
+		}
+
+		var date = (`${day}.${month}.${year}`);
+		console.log(date);
+
+		function randomBetween(min, max) { // min and max included 
+			return Math.floor(Math.random() * (max - min + 1) + min);
+
+		}
+
+		function showdate() {
+			document.getElementById("randdate").innerHTML = date;
+		}
+	</script>
+</body>
+
+</html>

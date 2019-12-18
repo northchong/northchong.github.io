@@ -1,0 +1,138 @@
+table {
+	height: 25%;
+	width: 50%;
+	margin: auto;
+}
+
+table, th {
+	border-collapse: collapse;
+}
+
+td {
+	border: 1px solid black;
+	text-align: center;
+	font-size: 19px;
+}
+
+th {
+	border: 2px solid black;
+}
+
+h3 {
+	font-size: 30px;
+	text-align: center;
+
+}
+
+h2 {
+	font-size: 37px;
+	font-style: italic;
+	font-style: bold;
+}
+
+p {
+	font-size: 20px;
+}
+
+body {
+	background: rgb(0, 188, 199);
+	background: linear-gradient(25deg, rgba(0, 188, 199, 0.8519782913165266) 0%, rgba(255, 0, 125, 0.8127626050420168) 50%, rgba(0, 188, 199, 0.7679446778711485) 100%);
+	font-family: 'Sulphur Point', sans-serif;
+
+}
+
+h4 {
+	font-size: 18px;
+	text-align: center;
+}
+
+.mockup-images {
+	height: auto;
+	margin: auto;
+	display: block;
+}
+
+.table-no-border th, td {
+	border: none;
+}
+
+.versiontable td {
+	border: 2px solid black;
+	font-family: 'Sulphur Point', sans-serif;
+	padding: 5px;
+
+}
+
+h1, h2, h3, h4, p {
+	font-family: 'Sulphur Point', sans-serif;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+
+}
+
+div {
+	border: 20px;
+	margin: auto;
+	padding: 40px;
+}
+
+#header {
+	text-align: center;
+	font-size: 2.5em;
+	display: block;
+	margin: auto;
+
+}
+
+#button {
+	box-shadow: 8px 4px 2px black;
+	padding: 8px;
+	text-decoration: none;
+	border-radius: 8px;
+	background: rgb(0, 188, 199);
+	display: inline-block;
+	background: linear-gradient(0deg, rgba(0, 188, 199, 0.8519782913165266) 0%, rgba(255, 0, 125, 0.8127626050420168) 100%, rgba(0, 188, 199, 0.7679446778711485) 0%);
+	text-shadow: 4px 4px 4px black;
+	color: white;
+}
+
+.free {
+	background-color: lightgray;
+	font-size: 18px;
+	text-shadow: 1px 1px 1px black;
+}
+
+.full {
+	background-color: lightblue;
+	font-size: 18px;
+	text-shadow: 1px 1px 1px black;
+}
+
+.premium {
+	background-color: lightgreen;
+	font-size: 18px;
+	text-shadow: 1px 1px 1px black;
+}
+
+.VIP {
+	background-color: gold;
+	font-size: 18px;
+	text-shadow: 1px 1px 1px black;
+}
+
+.slogan {
+	text-align: center;
+}
+
+.dateheader {
+	font-size: 20px;
+	font-style: normal;
+}
+
+#tablepic {
+	height: 100px;
+	width: 100px;
+	display: block;
+	margin: auto;
+	padding: 25px;
+}

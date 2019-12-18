@@ -1,0 +1,154 @@
+<html>
+
+<head>
+	<title>SniffLock</title>
+	<link href="styles.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="showdate()">
+	<div>
+		<h2 class="dateheader">
+			<form id="randdate">
+				<input>
+			</form>
+
+		</h2>
+
+		<h1 id="header">
+			SniffLock
+			<img style="display: block; margin: auto;" src="https://i.imgur.com/tLUBuhk.png" height="200" width="200"
+				id="picture1" onclick="imgklik();" />
+
+			<h3 class="slogan">
+				Safety first.
+			</h3>
+			<hr>
+
+		</h1>
+
+		<p>
+			The app grants its users full anonymity, leaving no history behind.
+			There have been a lot of problems and talks about big companies using our data for
+			personal gain.
+			The app will be able to access multiple servers all over the world, with proxy servers
+			included.
+
+			We've made the app as user-friendly as possible, with all features being shown on
+			the home screen without hiding anything important behind walls of different menus.
+			<br>
+			<br>
+
+			<a id="button" href="https://www.figma.com/file/pbB31m8aybDCfAfDft7oeD/SniffLock?node-id=1%3A104"
+				target="_blank" />Our Figma Prototype</a> <br>
+			<br>
+			<a id="button"
+				href="https://docs.google.com/document/d/1i6SSzMbLYgMyIO1CyNKa9-z_F1O4Z9RmH2G5gQrH-IE/edit?usp=sharing"
+				target="_blank" />For more details...</a>
+			<hr>
+		</p>
+
+		<p>
+			The app is meant for people who really care about their online safety, or for those
+			who wish to leave nothing onto the sites they visit.
+			<hr>
+		</p>
+		<h2>
+			<a id="button" href="faq.html"> FAQ </a>
+		</h2>
+
+		<h2 id="Mockups"> Mockups </h2>
+		<table class="table-no-border">
+			<tr>
+				<td>
+					<img class="mockup-images" alt="App main screen should appear.."
+						src="https://i.imgur.com/YpztESf.png"id="picture2" onclick="imgklik1();" />
+				</td>
+				<td>
+					<a
+						href="https://nordvpn.com/offer/brand/?gclid=CjwKCAjw5fzrBRASEiwAD2OSVxleC9kPb7Z0KTTXS5gmkOCcV57_jIJNTQ4jiIYzkX3Duk0hdvtrFRoCfd4QAvD_BwE">
+						<img class="mockup-images" src="https://i.imgur.com/NDanudi.png"
+							alt="This is where the settings screen should be">
+					</a>
+				</td>
+			</tr>
+		</table>
+
+
+		<table class="versiontable">      <!-- table with different versions-->
+			<tr>
+				<th class="free">
+					<font size="+2">Free Version</font>
+				</th>
+				<th class="full">
+					<font size="+2">Full Version</font>
+				</th>
+				<th class="premium">
+					<font size="+2">Premium Version</font>
+				</th>
+				<th class="VIP">
+					<font size="+2">VIP Version</font>
+				</th>
+			</tr>
+			<tr>
+				<td class="free"><img src="https://i.imgur.com/Yk9eIsY.png" id="tablepic">Limited selection of servers</td>
+				<td class="full"><img src="https://i.imgur.com/hcCOPBT.png" id="tablepic">All servers available for use</td>
+				<td class="premium"><img src="https://i.imgur.com/7r3d45U.png" id="tablepic">Free care package every 2 months</td>
+				<td class="VIP"><img src="https://i.imgur.com/aLSQi7C.png" id="tablepic">Access to the app's code</td>
+			</tr>
+			<tr>
+				<td class="free"><img src="https://i.imgur.com/ryH41gn.png" id="tablepic">Less customization options</td>
+				<td class="full"><img src="https://i.imgur.com/Hh4cZuh.png" id="tablepic">More colors to choose from</td>
+				<td class="premium"><img src="https://i.imgur.com/za8EbpM.png" id="tablepic">Exclusive concept art unlocked</td>
+				<td class="VIP"><img src="https://i.imgur.com/EiRSSGs.png" id="tablepic">Paid vacation every 2 months</td>
+			</tr>
+
+		</table>
+
+	</div>
+
+ 	<script>
+		function imgklik() {          // app logo changes
+			if (document.getElementById("picture1").src == "https://i.imgur.com/tLUBuhk.png") {
+				document.getElementById("picture1").src = "https://i.imgur.com/RM1X0ie.png";
+			} else {
+				document.getElementById("picture1").src = "https://i.imgur.com/tLUBuhk.png";
+			}
+		}
+
+		var day = randomBetween(1, 31);
+		var month = randomBetween(1, 12);
+		var year = randomBetween(2010, 2019);
+
+		if (day <= 9) {
+			day = "0" + day;
+		}
+		if (month <= 9) {
+			month = "0" + month;
+		}
+
+		var date = (`${day}.${month}.${year}`);
+		console.log(date);
+
+		function randomBetween(min, max) { // min and max included 
+			return Math.floor(Math.random() * (max - min + 1) + min);
+
+		}
+
+		function showdate() {
+			document.getElementById("randdate").innerHTML = date;
+		}
+		
+		function imgklik1() {        // mockup changes
+			if (document.getElementById("picture2").src == "https://i.imgur.com/YpztESf.png") {
+				document.getElementById("picture2").src = "https://i.imgur.com/yDovorG.png";
+			} else {
+				document.getElementById("picture2").src = "https://i.imgur.com/YpztESf.png";
+			}
+		} 
+	</script> 
+
+</body>
+
+</html>
