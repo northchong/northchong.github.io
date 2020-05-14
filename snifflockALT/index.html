@@ -29,6 +29,23 @@
 </head>
 
 <body class="is-preload">
+	<script>
+		function landingbutton() {
+			gtag("event", "Landing site clicked");
+		}
+
+		function figmabutton() {
+			gtag("event", "Figma prototype clicked");
+		}
+
+		function docsbutton() {
+			gtag("event", "Google Docs clicked");
+		}
+
+		function FAQbutton() {
+			gtag("event", "FAQ clicked");
+		}
+	</script>
 
 	<!-- Wrapper -->
 	<div id="wrapper">
@@ -95,7 +112,7 @@
 						<img src="images/pic01.jpg" alt="" />
 					</span>
 					<header class="major">
-						<h3><a href="landing.html" class="link">Landing site</a></h3>
+						<h3><a href="landing.html" onclick="landingbutton()" class="link">Landing site</a></h3>
 						<p>Check out our landing site!</p>
 					</header>
 				</article>
@@ -104,7 +121,7 @@
 						<img src="images/pic02.jpg" alt="" />
 					</span>
 					<header class="major">
-						<h3><a href="https://www.figma.com/proto/pbB31m8aybDCfAfDft7oeD/SniffLock?node-id=44%3A176&scaling=scale-down"
+						<h3><a href="https://www.figma.com/proto/pbB31m8aybDCfAfDft7oeD/SniffLock?node-id=44%3A176&scaling=scale-down" onclick="figmabutton()"
 								class="link">Prototype</a></h3>
 						<p>Maybe take a look at our prototype?</p>
 					</header>
@@ -114,7 +131,7 @@
 						<img src="images/pic03.jpg" alt="" />
 					</span>
 					<header class="major">
-						<h3><a href="https://docs.google.com/document/d/1sTEh5g719O13ENgZK8IHO0_uHygr90aOyjFen_WLyh0/edit?usp=sharing"
+						<h3><a href="https://docs.google.com/document/d/1sTEh5g719O13ENgZK8IHO0_uHygr90aOyjFen_WLyh0/edit?usp=sharing" onclick="docsbutton()"
 								class="link">Docs</a></h3>
 						<p>Read a bit more about the app.</p>
 					</header>
@@ -124,7 +141,7 @@
 						<img src="images/pic04.jpg" alt="" />
 					</span>
 					<header class="major">
-						<h3><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="link">FAQ</a></h3>
+						<h3><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" onclick="FAQbutton()" class="link">FAQ</a></h3>
 						<p>FAQ OFF (not yet implemented)</p>
 					</header>
 				</article>
