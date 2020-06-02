@@ -1,0 +1,110 @@
+.image {
+    height: 100px;
+    width: 100px;
+}
+
+body {
+    background-color: #151515;
+}
+
+#shop {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    padding: 5px;
+    margin: auto;
+    background-image: url(https://www.wallpaperflare.com/static/56/517/209/pattern-orange-black-flag-wallpaper.jpg);
+    background-size: cover;
+    border: 2px solid #FF7802;
+    border-radius: 20px;
+}
+
+.shopitem {
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,0.6) 0%, rgba(255,192,0,0.6) 50%, rgba(255,0,255,1) 100%);
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 300px;
+    width: 300px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+    padding-top: 10px;
+    position: static;
+}
+
+.info {
+    display: block;
+    margin: auto;
+    font-family: 'Varela Round', sans-serif;
+
+}
+
+.title {
+    display: block;
+    margin: auto;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+}
+
+.desc {
+    display: block;
+    flex-wrap: wrap;
+    margin: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.button {
+    padding: 5px;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    text-decoration: black;
+    background: rgb(3,121,255);
+    background: linear-gradient(180deg, rgba(3,121,255,0.6) 0%, rgba(255,0,255,0.6) 100%);
+}
+
+.button:hover {
+    background: rgb(102, 102, 153, 50%);
+    transition: ease;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    vertical-align: top;
+    padding: 8px 8px 8px;
+}
+
+.button:active {
+    vertical-align: top;
+    padding: 5px 5px 5px;
+    transition-duration: 0.1s;
+}
+h5 {
+    font-family: 'Noto Sans', sans-serif;
+
+
+}
+
+#ckokc {
+    font-family: 'Righteous', cursive;
+    font-size: 50px;
+    text-align: center;
+    color: #FF7802;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    color: #FF7802;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    color: #FF7802;
+}
+
