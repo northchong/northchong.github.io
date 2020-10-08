@@ -3945,7 +3945,7 @@ input, select, textarea {
 }
 
 #arnold {
-	filter: brightness(85%);
+	filter: brightness(80%);
 	float: left;
 	padding: 20px;
 	height: 100%;
@@ -3955,4 +3955,10 @@ input, select, textarea {
 	padding: 20px;
 	font-weight: bold;
 	text-shadow: white 1px 1px 5px;
+}
+
+#gametitle {
+	text-shadow: indigo 5px 5px 10px;
+	/* color: rgb(130, 232, 248); */
+	color: white;
 }
