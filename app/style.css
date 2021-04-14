@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#authentication {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: rgb(44,46,66);
+    background: linear-gradient(120deg, rgba(44,46,66,1) 0%, rgba(60,66,73,1) 100%);   
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+}
+
+#feedback {
+    color: red;
+    padding: 10px;
+}
+
+#emptyspace {
+    padding: 5px;
+}
+
+#app {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: rgb(44,46,66);
+    background: linear-gradient(120deg, rgba(44,46,66,1) 0%, rgba(60,66,73,1) 100%);     
+}
+
+#phone {
+    width: 500px;
+    height: 800px;
+    border: 20px solid black;
+    background: #141a5f;
+    position: relative;
+    float: left;
+    border-radius: 20px;
+}
+
+#buttons {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.bigbuton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    width: 75%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border: 2px solid black;
+    border-radius: 40px;
+    margin-top: 1em;
+}
+
+.bigbuton:hover {
+    color: #4B9DB1;
+    border: #FFB04C solid 2px;
+    background: #fff;
+}
+
+#disconec {
+    display: none;
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 14%, rgba(163, 7, 39, 1) 100%);
+}
+
+#conec {
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 227, 192, 1) 0%, rgba(255, 176, 76, 1) 100%);
+}
+
+#logout {
+    text-align: center;
+    font-size: large;
+    background: rgb(138, 138, 138);
+    background: linear-gradient(180deg, rgba(138, 138, 138, 1) 0%, rgba(240, 240, 240, 1) 50%, rgba(138, 138, 138, 1) 100%);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    right: 0;
+    display: block;
+    margin-left: 1em;
+}
+
+#logout:hover {
+    color: #4B9DB1;
+    border: #FFB04C solid 2px;
+    background: #fff;
+}
+
+#data {
+    display: none;
+    color: #51c4e0;
+    text-shadow: 2px 2px 2px black;
+    font-size: x-large;
+}
+
+.flag {
+    width: 150px;
+    height: auto;
+    margin-left: 50%;
+    transform: translate(-50%);
+    padding: 20px;
+}
+
+.data-text {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 60px;
+    font-style: italic;
+    text-shadow: 3px 3px 3px white;
+    color: #FFB04C;
+}
+
+h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+}
+
+#country {
+    display: block;
+    justify-content: center;
+    margin: auto;
+    margin-left: 5em;
+    width: 8em;
+    height: 50px;
+    bottom: 0;
+    text-align: center;
+    left: 0;
+    font-size: large;
+    background: rgb(138, 138, 138);
+    background: linear-gradient(180deg, rgba(138, 138, 138, 1) 0%, rgba(240, 240, 240, 1) 50%, rgba(138, 138, 138, 1) 100%);
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#country:hover {
+    border: #FFB04C solid 2px;
+    background: #fff;
+}
+
+.authbutton {
+    padding: 10px;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: large;
+}
+
+.authbutton:hover {
+    color: #4B9DB1;
+    border: #FFB04C solid 2px;
+    background: #fff;    
+}
+
+.dropp {
+    display: flex;
+    justify-content: center;
+    vertical-align: bottom;
+    position: absolute;
+    bottom: 0;
+    margin: 2em;
+    text-align: center;
+}
+
+.inputs {
+    padding: 10px;
+    width: 300px;
+    height: 60px;
+    font-size: medium;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px solid black;
+}
