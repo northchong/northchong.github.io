@@ -28,6 +28,9 @@ function sendMessage() {
   })
   .catch((error) => {
     console.error("Error adding document: ", error);
+  })
+  .then(() => {
+    document.getElementById("message-input").value = "";
   });
 }
 
