@@ -14,6 +14,39 @@ firebase.analytics();
 var database = firebase.firestore();
 var messageInput = document.getElementById("message-input");
 var currentChannelId = "messages";
+//Login
+var loginScreen = document.getElementById('login');
+var adminScreen = document.getElementById('main');
+
+firebase.auth().onAuthStateChanged(function (user) {
+  if (user) {
+    adminScreen.style.display = "flex";
+		loginScreen.style.display = "none";
+  } else {
+    adminScreen.style.display = "none";
+		loginScreen.style.display = "block";
+  }
+});
+
+function login() {
+	var email = document.getElementById('email').value;
+	var password = document.getElementById('password').value;
+
+	firebase.auth().signInWithEmailAndPassword(email, password)
+	.then((userCredential) => {
+		console.log(userCredential);
+	})
+	.catch((error) => {
+		console.log(error);
+	});
+}
+
+function logout(){
+	firebase.auth().signOut()
+		.then(() => {
+			console.log('Logged out');
+		})
+}
 
 function sendMessage() {
   var message = messageInput.value;
@@ -28,9 +61,6 @@ function sendMessage() {
   })
   .catch((error) => {
     console.error("Error adding document: ", error);
-  })
-  .then(() => {
-    document.getElementById("message-input").value = "";
   });
 }
 
